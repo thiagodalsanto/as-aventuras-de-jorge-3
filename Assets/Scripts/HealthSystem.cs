@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    public GameObject[] hearts;
-    private int life;
+    public ProgressBar progressBar;
     public bool dead;
 
     public Canvas deathCanvas;
@@ -17,7 +16,6 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
-        life = hearts.Length;
         deathCanvas.enabled = false;
     }
 
@@ -30,7 +28,7 @@ public class HealthSystem : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            TakeDamage(1);
+            TakeDamage(2);
         }
 
         if (inContactWithDino)
@@ -38,7 +36,7 @@ public class HealthSystem : MonoBehaviour
             dinoContactTimer += Time.deltaTime;
             if (dinoContactTimer >= dinoContactTime)
             {
-                TakeDamage(1);
+                TakeDamage(2);
                 dinoContactTimer = 0f;
             }
         }
@@ -66,12 +64,11 @@ public class HealthSystem : MonoBehaviour
 
     public void TakeDamage(int d) 
     {
-        if (life >= 1)
+        if (progressBar.currentValue >= 1)
         {
-            life -= d;
-            Destroy(hearts[life].gameObject);
+            progressBar.currentValue -= 2;
 
-            if (life < 1)
+            if (progressBar.currentValue == 0 || progressBar.currentValue < 0)
             {
                 dead = true;
             }

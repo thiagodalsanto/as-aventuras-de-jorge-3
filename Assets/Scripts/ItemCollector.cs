@@ -21,7 +21,6 @@ public class ItemCollector : MonoBehaviour
     {
         if (other.CompareTag("Item"))
         {
-            Destroy(other.gameObject);
             CollectItem(other.gameObject.name);
         }
         
