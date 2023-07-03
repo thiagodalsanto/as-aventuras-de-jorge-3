@@ -12,4 +12,4 @@ public class ItemSO : ScriptableObject
     public int item_damage;
 }
 
-public enum itemType { Hammer, Axe, PickAxe }
+public enum itemType { Hammer, Axe, PickAxe, Hoe }

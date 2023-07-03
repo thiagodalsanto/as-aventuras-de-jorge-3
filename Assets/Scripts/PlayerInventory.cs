@@ -24,12 +24,14 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] GameObject hammer_item;
     [SerializeField] GameObject axe_item;
     [SerializeField] GameObject pickaxe_item;
+    [SerializeField] GameObject hoe_item;
 
     [Space(20)]
     [Header("Item prefabs")]
     [SerializeField] GameObject hammer_prefab;
     [SerializeField] GameObject axe_prefab;
     [SerializeField] GameObject pickaxe_prefab;
+    [SerializeField] GameObject hoe_prefab;
 
     [Space(20)]
     [Header("UI")]
@@ -50,12 +52,17 @@ public class PlayerInventory : MonoBehaviour
         itemSetActive.Add(itemType.Hammer, hammer_item);
         itemSetActive.Add(itemType.Axe, axe_item);
         itemSetActive.Add(itemType.PickAxe, pickaxe_item);
+        itemSetActive.Add(itemType.Hoe, hoe_item);
 
         itemInstantiate.Add(itemType.Hammer, hammer_prefab);
         itemInstantiate.Add(itemType.Axe, axe_prefab);
         itemInstantiate.Add(itemType.PickAxe, pickaxe_prefab);
+        itemInstantiate.Add(itemType.Hoe, hoe_prefab);
+
 
         NewItemSelected();
+
+        pickUpItem_gameobject.SetActive(false);
     }
 
     void Update()
@@ -83,7 +90,7 @@ public class PlayerInventory : MonoBehaviour
 
                 if (item != null)
                 {
-                    item.tag = "Untagged";
+                    item.tag = "NaMao";
                     inventoryList.Add(item.itemScriptableObject.item_type);
                     item.PickItem();
                 }
@@ -188,6 +195,7 @@ public class PlayerInventory : MonoBehaviour
         hammer_item.SetActive(false);
         axe_item.SetActive(false);
         pickaxe_item.SetActive(false);
+        hoe_item.SetActive(false);
 
         if (inventoryList.Count > 0 && selectedItem < inventoryList.Count)
         {

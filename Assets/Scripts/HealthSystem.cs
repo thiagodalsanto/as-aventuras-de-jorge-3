@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+
 
 public class HealthSystem : MonoBehaviour
 {
@@ -10,13 +12,19 @@ public class HealthSystem : MonoBehaviour
     public Canvas deathCanvas;
     private bool isMouseLocked = true;
 
+
+    public GameObject targetGameObject;
+    public Component componentToDisable;
+
     private bool inContactWithDino;
     private float dinoContactTime = 1f;
     private float dinoContactTimer;
+    public int damage = 2;
 
     void Start()
     {
         deathCanvas.enabled = false;
+
     }
 
     void Update()
@@ -26,17 +34,12 @@ public class HealthSystem : MonoBehaviour
             PlayerDied();
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            TakeDamage(2);
-        }
-
         if (inContactWithDino)
         {
             dinoContactTimer += Time.deltaTime;
             if (dinoContactTimer >= dinoContactTime)
             {
-                TakeDamage(2);
+                TakeDamage(damage);
                 dinoContactTimer = 0f;
             }
         }
@@ -66,7 +69,7 @@ public class HealthSystem : MonoBehaviour
     {
         if (progressBar.currentValue >= 1)
         {
-            progressBar.currentValue -= 2;
+            progressBar.currentValue -= d;
 
             if (progressBar.currentValue == 0 || progressBar.currentValue < 0)
             {
@@ -75,10 +78,16 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    private void PlayerDied()
+    public void PlayerDied()
     {
+        CinemachineBrain cinemachineBrain = targetGameObject.GetComponent<CinemachineBrain>();
+        Behaviour componentBehaviour = componentToDisable as Behaviour;
         Time.timeScale = 0f;
         deathCanvas.enabled = true;
+
+        componentBehaviour.enabled = false;
+        cinemachineBrain.enabled = false;
+
 
         isMouseLocked = false;
         Cursor.lockState = CursorLockMode.None;

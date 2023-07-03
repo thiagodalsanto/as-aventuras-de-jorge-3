@@ -22,7 +22,7 @@ public class EnemyAnimation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Attack"))
+        if (other.CompareTag("Power"))
         {
             isDead = true;
             animator.SetBool("IsDead", isDead);
@@ -34,6 +34,14 @@ public class EnemyAnimation : MonoBehaviour
             isAttack = true;
             animator.SetBool("IsAttack", isAttack);
             Debug.Log("Character is attacking!");
+        }
+
+        if(other.CompareTag("NaMao"))
+        {
+            isDead = true;
+            animator.SetBool("IsDead", isDead);
+            navMeshAgent.speed = 0f;  // Set NavMeshAgent's speed to zero
+            StartCoroutine(TeleportAfterDelay());
         }
     }
 
