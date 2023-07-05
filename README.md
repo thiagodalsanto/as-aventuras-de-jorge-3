@@ -54,7 +54,7 @@ Bônus: Poder chamado de Earth-Shatter dentro do jogo.
 </div>
 
 ## Informações Adicionais
-O está implementado sobre os direitos da licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+O jogo está implementado sobre os direitos da licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
 International (CC-BY-NC-ND-4.0) que permite o uso e compartilhamento do jogo com créditos devidos aos autores. Contudo, proíbe o uso comercial, criações de derivados, modificações e fins acadêmicos.
 
 Jogo desevolvido por [Thiago Dal Santo](https://github.com/thiagodalsanto) e [Jair Sequeira](https://github.com/Evon09).
