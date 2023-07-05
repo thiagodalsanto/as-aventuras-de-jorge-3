@@ -11,7 +11,7 @@
 * Docente: Jorge Aikes Junior.
 
 ## Descrição do Game
-O jogo foi realizado como projeto semestral para a matéria de Realidade Virtual. Seu Jorge voltou no tempo e terá que encontrar três objetos nos mapas para consertar seu Totem do Tempo, assim conseguindo avançar no tempo até voltar a sua vida cotidiana.
+O jogo foi realizado como projeto semestral para a disciplina de Realidade Virtual. Seu Jorge voltou no tempo e terá que encontrar três objetos nos mapas para consertar seu Totem do Tempo, assim conseguindo avançar no tempo até voltar a sua vida cotidiana.
 
 ## Comandos 
 * WASD para Andar;
