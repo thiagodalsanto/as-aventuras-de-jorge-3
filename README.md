@@ -11,7 +11,7 @@
 * Docente: Jorge Aikes Junior.
 
 ## Descrição do Game
-O jogo foi realizado como projeto semestral para a matéria de Realidade Virtual. Seu Jorge voltou no tempo e terá que encontrar nos mapas três objetos para concertar seu Tótem do Tempo, assim conseguindo avançar no tempo até voltar a sua vida cotidiana.
+O jogo foi realizado como projeto semestral para a matéria de Realidade Virtual. Seu Jorge voltou no tempo e terá que encontrar três objetos nos mapas para consertar seu Totem do Tempo, assim conseguindo avançar no tempo até voltar a sua vida cotidiana.
 
 ## Comandos 
 * WASD para Andar;
@@ -25,7 +25,7 @@ O jogo foi realizado como projeto semestral para a matéria de Realidade Virtual
 * Botão Esquerdo do Mouse para Ataque Básico.
 
 ## Funcionalidades
-* Menus interativos para: Inicio, Pause, Instruções e Final do jogo;
+* Menus interativos para Inicio, Pause, Instruções e Final do jogo;
 * Inimigos perseguindo o personagem o tempo todo;
 * Respawn automático para o inimigo que for abatido;
 * Sistemas de Hotbar e Coleta de itens;
@@ -53,6 +53,8 @@ Bônus: Poder chamado de Earth-Shatter dentro do jogo.
 
 </div>
 
-## Informações
+## Informações Adicionais
+O está implementado sobre os direitos da licença <strong>Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International (CC-BY-NC-ND-4.0)</strong> que prevê o uso apenas privativo, sem permissões para edição do código, uso comercial ou acadêmico. 
 
 Jogo desevolvido por [Thiago Dal Santo](https://github.com/thiagodalsanto) e [Jair Sequeira](https://github.com/Evon09).
