@@ -11,32 +11,30 @@
 * Docente: Jorge Aikes Junior.
 
 ## Descrição do Game
-O jogo foi realizado como projeto semestral para a disciplina de Realidade Virtual. Seu Jorge voltou no tempo e terá que encontrar três objetos nos mapas para consertar seu Totem do Tempo, assim conseguindo avançar no tempo até voltar a sua vida cotidiana.
+O jogo foi desenvolvido como projeto semestral para a disciplina de Realidade Virtual. Seu Jorge foi enviado de volta no tempo e terá a tarefa de encontrar três objetos em vários mapas para consertar o seu Totem do Tempo e, assim, conseguir avançar no tempo até retornar à sua vida cotidiana.
 
 ## Comandos 
-* WASD para Andar;
-* Espaço para Pular;
-* E para Coletar Itens;
-* F5 para Alternar entre Primeira e Terceira Pessoa;
-* Shift para Correr;
-* ESC para Menu de Pause;
-* Movimento do Mouse para Controlar a câmera;
-* Botão Direito do Mouse para 1o Carregar a Aura do Seu Jorge e 2o para Usar o poder Especial;
-* Botão Esquerdo do Mouse para Ataque Básico.
+* Utilize as teclas WASD para movimentar-se;
+* Pressione a barra de espaço para saltar;
+* Pressione a tecla E para coletar itens;
+* Utilize a tecla F5 para alternar entre as perspectivas de primeira e terceira pessoa;
+* Pressione a tecla Shift para correr;
+* Utilize a tecla ESC para acessar o menu de pausa;
+* Utilize o movimento do mouse para controlar a câmera;
+* Clique com o botão direito do mouse para, primeiramente, carregar a aura de Seu Jorge e, em seguida, utilizar o poder especial;
+* Clique com o botão esquerdo do mouse para realizar um ataque básico.
 
 ## Funcionalidades
-* Menus interativos para Inicio, Pause, Instruções e Final do jogo;
-* Inimigos perseguindo o personagem o tempo todo;
-* Respawn automático para o inimigo que for abatido;
-* Sistemas de Hotbar e Coleta de itens;
-* Sistemas de Vida, Armadura e Dano.
+* Implementação de menus interativos para o início, pausa, instruções e final do jogo;
+* Os inimigos perseguem o personagem de forma contínua;
+* Os inimigos abatidos são automaticamente regenerados;
+* Implementação de sistemas de hotbar e coleta de itens;
+* Implementação de sistemas de vida, armadura e dano.
 
 ## Download
 Para Windows e Linux: [v1.0.0](https://github.com/thiagodalsanto/as-aventuras-de-jorge-3/releases/download/v1.0.0/Final.zip)
 
-
 ## Imagens *In-Game*
-
 <div align="center">
 
 Primeira Fase: Era Mesozoica, inimigos são Dinossauros.
@@ -54,7 +52,6 @@ Bônus: Poder chamado de Earth-Shatter dentro do jogo.
 </div>
 
 ## Informações Adicionais
-O jogo está implementado sobre os direitos da licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
-International (CC-BY-NC-ND-4.0) que permite o uso e compartilhamento do jogo com créditos devidos aos autores. Contudo, proíbe o uso comercial, criações de derivados, modificações e fins acadêmicos.
+O jogo foi desenvolvido e está licenciado sob os termos da licença Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC-BY-NC-ND-4.0). Essa licença permite o uso e compartilhamento do jogo, desde que os créditos sejam atribuídos aos autores. No entanto, proíbe o uso comercial, a criação de derivados, modificações e o uso para fins acadêmicos.
 
 Jogo desevolvido por [Thiago Dal Santo](https://github.com/thiagodalsanto) e [Jair Sequeira](https://github.com/Evon09).
